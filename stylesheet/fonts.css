@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Onest-Regular";
+    src: url("../font/Onest-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.9vw;
+    margin: 0;
+}
+
+.h2b {
+    font-size: 1.9vw;
+    margin: 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.6vw;
+    margin: 0;
+    line-height: 120%;
+}
+
+.h0 {
+    font-size: 14vw;
+    margin: 0;
+}

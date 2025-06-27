@@ -1,0 +1,48 @@
+/* Меню */
+
+#menu2_2 {
+    height: 8vw;
+    color: #ffffff;
+    background-color: #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#menu1_2, #menu3_2, #menu4_2, #menu5_2, #menu6_2 {
+    height: 8vw;
+    color: #2A4378;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Основное */
+
+.filling_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.3vw;
+    border-top: 0.3vw solid #DB284D;
+    border-bottom: 0.3vw solid #DB284D;
+    background-color: #DB284D;
+}
+
+/* Листалка */
+
+.bookSlider {
+    border-bottom: 0.3vw solid #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mockupBook {
+    width: 99vw;
+}
+
+

@@ -1,0 +1,328 @@
+@media screen and (max-width: 768px) {
+
+    /* База */
+
+    h1 {font-size: 6vw;}
+    h2 {font-size: 15px;}
+    .h2b {font-size: 15px; font-weight: bold;}
+    p {font-size: 2.2vw; line-height: 135%;}
+
+    /* Меню */
+
+    .menuGroupe {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .menu {min-height: 70px;}
+
+    /* Заголовок */
+
+    .title {min-height: 150px;}
+
+    /* Кнопка */
+
+    .button {min-height: 70px;}
+    .button a {font-size: 2.5vw; margin: 0;}
+
+    /* Текст */
+
+    .text {min-height: 235px;}
+
+    /* Мокап */
+
+    .mockup {height: 37.9vw;}
+
+    /* Футер */
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .footerIn {
+        min-height: 70px;
+        line-height: 100%;
+    }
+
+    /* Страницы */
+
+    /* Главная */
+
+    .filling {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3fr;
+    }
+
+    .blinkingFlower1 {
+        height: 25vw;
+        margin-top: 0.3vw;
+    }
+
+    .blinkingFlower2 {
+        height: 25vw;
+        margin-top: 0.3vw;
+    }
+
+    .textMain {height: 45vw;}
+
+    .mockup1 {height: 48vw;}
+
+    .picPosterMain {height: 62.5vw;}
+
+    .registration {
+        height: 41vw;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* line-height: 200%; */
+    }
+
+    .regTitle {
+        font-size: 1.6vw;
+        font-weight: bold;
+        line-height: 400%;
+        margin-top: -3vw;
+    }
+
+    form {
+        line-height: 130%;
+    }
+
+    .registration form input[type="text"] { 
+        margin-top: 100vw;
+    }
+
+    .registration form input[type="plate"] {
+        height: 4vw;
+        width: 28vw;
+        background-color: #D9D9D9;
+        color: #000000;
+        display: flex;
+        align-items: bottom;
+        justify-content: center;
+        border: none;
+    }
+
+    .registration form input#submit {
+        height: 4vw;
+        width: 28vw;
+        font-size: 1.6vw;
+        font-weight: bold;
+        background-color: #FBD941;
+        color: #000000;
+        display: flex;
+        align-items: bottom;
+        justify-content: center;
+        border: none;
+    }
+
+    .more {
+        height: 41vw;
+        /* border: 0.3vw solid #DB284D; */
+    }
+
+    .spaceM {
+        height: 16.5vw;
+    }
+
+    .eventM{
+        height: 24.2vw;
+        margin-top: 0.15vw;
+    }
+
+    /* Книга */
+
+    .filling_2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
+    }
+    
+    .bookSlider {min-height: 300px;}
+
+    .mockupBook {width: 99vw;}
+
+    /* Пространство */
+
+    .filling_3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 6fr;
+    }
+
+    .PicspaceMockup {height: 37.9vw;}
+
+    /*Мероприятия*/
+
+    /* .filling_4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    } */
+
+    .eventFilling {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 4fr;
+    }
+
+    .PicEventPoster {height: 47vw;}
+
+    /* Игра */
+
+    .filling_5 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .gameFilling {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .element {
+        height: 29.05vw;
+    }
+
+    /*Магазин*/
+
+    .shopFilling {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 12fr;
+    }
+
+    .flower {height: 50vw;}
+
+    .flowerName {min-height: 70px;}
+
+    .flowerButton {min-height: 70px;}
+
+}
+
+
+@media screen and (max-width: 414px) {
+
+    /* База */
+
+    h1 {font-size: 9vw;}
+    h2 {font-size: 13px;}
+    .h2b {font-size: 13px; font-weight: bold;}
+    p {font-size: 4.2vw; line-height: 135%;}
+
+    /* Меню */
+    
+    .menuGroupe {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3fr;
+    }
+
+    .menu {min-height: 70px;}
+
+    /* Заголовок */
+
+    .title {min-height: 150px;}
+
+    /* Кнопка */
+
+    .button {min-height: 70px;}
+    .button a {font-size: 4vw; margin: 0;}
+
+    /* Текст */
+
+    .text, .text_2 {min-height: 270px;}
+
+    /* Мокапы */
+
+    .mockup {height: 76.5vw;}
+
+    /* Футер */
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
+    }
+
+    .footerIn {
+        min-height: 70px;
+        line-height: 100%;
+    }
+
+    /* Книга */
+
+    .filling_2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
+    }
+
+    .bookSlider {min-height: 300px;}
+
+    .mockupBook {width: 99vw;}
+
+    /* Пространство */
+
+    .filling_3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 12fr;
+    }
+
+    .PicspaceMockup {height: 76vw;}
+
+    /*Мероприятия*/
+
+    .filling_4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .eventFilling {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 6fr;
+    }
+
+    .PicEventPoster {height: 70.9vw;}
+
+    /* Игра */
+
+    .filling_5 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .gameFilling {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .element {height: 28.9vw;}
+
+    /*Магазин*/
+
+    .shopFilling {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 24fr;
+    }
+
+    .flower {height: 99.5vw;}
+
+    .flowerName {min-height: 70px;}
+
+    .flowerButton {min-height: 70px;}
+
+}

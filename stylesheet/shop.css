@@ -1,0 +1,77 @@
+/* Меню */
+
+#menu6_6 {
+    height: 8vw;
+    color: #ffffff;
+    background-color: #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#menu1_6, #menu2_6, #menu3_6, #menu4_6, #menu5_6 {
+    height: 8vw;
+    color: #2A4378;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+/* Основное */
+
+.filling_6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 8fr;
+    gap: 0.3vw;
+    border-top: 0.3vw solid #DB284D;
+    border-bottom: 0.3vw solid #DB284D;
+    background-color: #DB284D;
+}
+
+
+/*Магазин*/
+
+.shopFilling {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 8fr;
+    gap: 0.3vw;
+    /* border-left: 0.3vw solid #DB284D; */
+    /* border-right: 0.3vw solid #DB284D; */
+    border-bottom: 0.3vw solid #DB284D;
+    background-color: #DB284D;
+}
+
+.flower {
+    height: 32.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.3vw solid #DB284D;
+}
+
+.flowerName {
+    height: 8vw;
+    color: #DB284D;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}
+
+.flowerButton {
+    height: 8vw;
+    color: #ffffff;
+    background-color: #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    border-top: 0.3vw solid #DB284D;
+}

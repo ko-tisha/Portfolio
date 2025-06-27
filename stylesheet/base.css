@@ -1,0 +1,108 @@
+/* Основные стили */
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: "Onest-Regular", sans-serif;
+    border: 0.3vw solid #DB284D;
+    background-color: #DB284D;
+}
+
+
+/* Меню */
+
+.menuGroupe {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.3vw;
+    margin: 0 auto;
+    background-color: #DB284D;
+}
+
+/* Заголовок */
+
+.title {
+    height: 13vw;
+    background-color: #ffffff;
+    color: #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}
+
+/* Кнопка */
+
+.button {
+    height: 8vw;
+    color: #ffffff;
+    background-color: #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}
+
+.button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.9vw;
+    margin: 0;
+}
+
+/* Текст */
+
+.text {
+    height: 23vw;
+    background-color: #FBD941;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}
+
+.text_2 {
+    height: 23vw;
+    background-color: #FBD941;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}
+
+.mockup {
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Футер */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.3vw;
+    background-color: #DB284D;
+}
+
+.footerIn {
+    height: 8vw;
+    line-height: 250%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2A4378;
+    background-color: #ffffff;
+}
+
+
+
+

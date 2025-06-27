@@ -1,0 +1,53 @@
+/* Меню */
+
+#menu4_4 {
+    height: 8vw;
+    color: #ffffff;
+    background-color: #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#menu1_4, #menu2_4, #menu3_4, #menu5_4, #menu6_4 {
+    height: 8vw;
+    color: #2A4378;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+/* Основное */
+
+.filling_4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.3vw;
+    border-top: 0.3vw solid #DB284D;
+    border-bottom: 0.3vw solid #DB284D;
+    background-color: #DB284D;
+}
+
+
+.eventFilling {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr;
+    gap: 0.3vw;
+    background-color: #DB284D;
+    border-bottom: 0.3vw solid #DB284D;
+}
+
+/*Мероприятия*/
+
+.PicEventPoster {
+    height: 23.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
