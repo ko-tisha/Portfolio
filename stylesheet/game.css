@@ -29,26 +29,51 @@
     grid-template-rows: 1fr;
     gap: 0.3vw;
     border-top: 0.3vw solid #DB284D;
-    border-bottom: 0.3vw solid #DB284D;
     background-color: #DB284D;
 }
 
 
 /* Элементы */
 
-.gameFilling {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 2fr;
-    gap: 0.3vw;
-    /* border-top: 0.3vw solid #DB284D; */
-    border-bottom: 0.3vw solid #DB284D;
+.gameFilling-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     background-color: #DB284D;
 }
 
-.element {
-    height: 14.2vw;
+.gameFilling {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: max-content;
+    will-change: transform;
+}
+
+.gameElement {
+    flex: 0 0 auto;
+    width: 14.2vw;
+}
+
+.element, .element2 {
+    height: 14.35vw;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.gameFilling {
+    animation: smoothScroll 20s linear infinite;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.gameFilling:hover {
+    animation-play-state: paused;
 }

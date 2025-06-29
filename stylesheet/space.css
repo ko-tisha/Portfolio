@@ -36,9 +36,39 @@
 
 /* Пространство */
 
+.spaceMockup {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
 .PicspaceMockup {
     height: 24.95vw;
+    display: block;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(219, 40, 77, 0.9);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.9vw;
+    text-align: center;
+    padding: 1vw;
+    box-sizing: border-box;
 }
+
+.spaceMockup:hover .PicspaceMockup {opacity: 0;}
+
+.spaceMockup:hover .caption {opacity: 1;}

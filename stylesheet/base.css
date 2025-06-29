@@ -6,7 +6,7 @@ body {
     overflow-x: hidden;
     font-family: "Onest-Regular", sans-serif;
     border: 0.3vw solid #DB284D;
-    background-color: #DB284D;
+    cursor: url("../img/cursor.png"), auto;
 }
 
 
@@ -21,6 +21,7 @@ body {
     background-color: #DB284D;
 }
 
+
 /* Заголовок */
 
 .title {
@@ -33,16 +34,19 @@ body {
     padding: 1vw;
 }
 
+
 /* Кнопка */
 
 .button {
-    height: 8vw;
+    height: 7.7vw;
     color: #ffffff;
     background-color: #DB284D;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1vw;
+    border-top: 0.3vw solid #DB284D;
+    transition: all 0.3s ease;
 }
 
 .button a {
@@ -50,7 +54,18 @@ body {
     text-decoration: none;
     font-size: 1.9vw;
     margin: 0;
+    transition: color 0.3s ease;
 }
+
+.button:hover {
+    background-color: white;
+    border-color: #DB284D;
+}
+
+.button:hover a {
+    color: #DB284D;
+}
+
 
 /* Текст */
 
@@ -60,19 +75,27 @@ body {
     color: #000000;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 1vw;
 }
 
-.text_2 {
+.text2 {
     height: 23vw;
     background-color: #FBD941;
     color: #000000;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 1vw;
 }
+
+.text_2 {display: none;}
+
+.text p {margin-left: 1vw;}
+
+.text2 p {margin-left: 1vw;}
+
+.text_2 p {margin-left: 3vw;}
 
 .mockup {
     height: 25vw;
@@ -94,7 +117,7 @@ body {
 
 .footerIn {
     height: 8vw;
-    line-height: 250%;
+    line-height: 2.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,6 +126,14 @@ body {
     background-color: #ffffff;
 }
 
+.footerIn a {
+    text-decoration: none;
+    color: #2A4378;
+}
+
+.footerIn:hover a {
+    color: #DB284D;
+}
 
 
 

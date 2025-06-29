@@ -33,21 +33,61 @@
     background-color: #DB284D;
 }
 
-
 .eventFilling {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 2fr;
+    grid-template-rows: auto;
     gap: 0.3vw;
     background-color: #DB284D;
     border-bottom: 0.3vw solid #DB284D;
 }
 
-/*Мероприятия*/
+.eventPoster {
+    position: relative;
+    overflow: hidden;
+    height: 23.1vw;
+}
 
 .PicEventPoster {
-    height: 23.1vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    display: block;
+}
+
+.poster-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 40, 77, 0.9);
+    color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1.5vw;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-align: center;
+}
+
+.poster-caption h2 {
+    font-size: 1.9vw;
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+.poster-caption p {font-size: 1.2vw; margin: 0.5vw 0;}
+
+.eventPoster:hover .PicEventPoster {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.eventPoster:hover .poster-caption {
+    opacity: 1;
 }

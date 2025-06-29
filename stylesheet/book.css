@@ -20,6 +20,7 @@
     text-decoration: none;
 }
 
+
 /* Основное */
 
 .filling_2 {
@@ -32,17 +33,39 @@
     background-color: #DB284D;
 }
 
+
 /* Листалка */
 
 .bookSlider {
     border-bottom: 0.3vw solid #DB284D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    overflow: hidden;
 }
 
-.mockupBook {
-    width: 99vw;
+.bookSliderPage {
+    position: absolute;
+    width: 80vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bookSliderPage.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+.bookSliderPage.hidden {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    pointer-events: none;
 }
 
 

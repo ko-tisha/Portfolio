@@ -1,11 +1,13 @@
 @media screen and (max-width: 768px) {
 
+
     /* База */
 
     h1 {font-size: 6vw;}
-    h2 {font-size: 15px;}
-    .h2b {font-size: 15px; font-weight: bold;}
+    h2 {font-size: 2.2vw; line-height: 135%;}
+    .h2b {font-size: 2.4vw; font-weight: bold; line-height: 135%;}
     p {font-size: 2.2vw; line-height: 135%;}
+
 
     /* Меню */
 
@@ -15,24 +17,50 @@
         grid-template-rows: 2fr;
     }
 
-    .menu {min-height: 70px;}
+    .menu {min-height: 11vw;}
+
 
     /* Заголовок */
 
-    .title {min-height: 150px;}
+    .title {min-height: 23vw; width: 47.6vw;}
+
 
     /* Кнопка */
 
-    .button {min-height: 70px;}
+    .button {min-height: 11vw;}
     .button a {font-size: 2.5vw; margin: 0;}
+
 
     /* Текст */
 
-    .text {min-height: 235px;}
+    .text {height: 36vw;}
+
+    .text2 {display: none;}
+
+    .text_2 {
+        height: 18vw;
+        background-color: #FBD941;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 1vw;
+        border-bottom: 0.3vw solid #DB284D;
+    }
+
+    .text p {
+        margin-left: 1vw;
+    }
+
+    .text_2 p {
+        margin-left: 3vw;
+    }
+
 
     /* Мокап */
 
     .mockup {height: 37.9vw;}
+
 
     /* Футер */
 
@@ -43,9 +71,10 @@
     }
 
     .footerIn {
-        min-height: 70px;
+        min-height: 11vw;
         line-height: 100%;
     }
+
 
     /* Страницы */
 
@@ -57,95 +86,82 @@
         grid-template-rows: 3fr;
     }
 
-    .blinkingFlower1 {
-        height: 25vw;
-        margin-top: 0.3vw;
-    }
+    .blinkingFlower1 { height: 25.25vw;}
 
-    .blinkingFlower2 {
-        height: 25vw;
-        margin-top: 0.3vw;
-    }
+    .blinkingFlower2 {height: 25.25vw;}
 
-    .textMain {height: 45vw;}
+    .textMain {height: 48.5vw;}
 
-    .mockup1 {height: 48vw;}
+    .mockup1 {height: 48vw;}  
 
-    .picPosterMain {height: 62.5vw;}
+    .picPosterMain {height: 62.5vw; margin-top: -0.4vw;}
+
+    .spaceM {order: 1;}
+    .elementM {order: 2;}
+    .registration {order: 3;}
 
     .registration {
-        height: 41vw;
+        height: 61.5vw;
         background-color: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* line-height: 200%; */
+        margin-top: 0.05vw;
     }
 
     .regTitle {
-        font-size: 1.6vw;
+        font-size: 2.6vw;
         font-weight: bold;
-        line-height: 400%;
-        margin-top: -3vw;
+        line-height: 8vw;
+        margin-top: -2vw;
     }
 
-    form {
-        line-height: 130%;
-    }
+    form {line-height: 2vw;}
 
     .registration form input[type="text"] { 
         margin-top: 100vw;
     }
 
     .registration form input[type="plate"] {
-        height: 4vw;
-        width: 28vw;
-        background-color: #D9D9D9;
-        color: #000000;
-        display: flex;
-        align-items: bottom;
-        justify-content: center;
-        border: none;
+        height: 6vw;
+        width: 42vw;
     }
 
     .registration form input#submit {
-        height: 4vw;
-        width: 28vw;
-        font-size: 1.6vw;
-        font-weight: bold;
-        background-color: #FBD941;
-        color: #000000;
+        height: 6vw;
+        width: 43vw;
+        font-size: 2.6vw;
+    }
+
+    .more {height: 41vw; margin-top: -12.6vw;}
+
+    .spaceM {height: 25vw;}
+
+    .bookM {height: 36.7vw;}
+
+    .bookMG {
+        height: 48.7vw;
         display: flex;
-        align-items: bottom;
+        align-items: center;
         justify-content: center;
-        border: none;
+        background-color: #ffffff;
+        border-bottom: 0.3vw solid #DB284D;
+        margin-top: -0.1vw;
     }
 
-    .more {
-        height: 41vw;
-        /* border: 0.3vw solid #DB284D; */
-    }
-
-    .spaceM {
-        height: 16.5vw;
-    }
-
-    .eventM{
-        height: 24.2vw;
-        margin-top: 0.15vw;
-    }
 
     /* Книга */
 
     .filling_2 {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 3fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
     }
-    
+        
     .bookSlider {min-height: 300px;}
 
     .mockupBook {width: 99vw;}
+
 
     /* Пространство */
 
@@ -157,21 +173,28 @@
 
     .PicspaceMockup {height: 37.9vw;}
 
+    .caption {font-size: 2.4vw;}
+
+
     /*Мероприятия*/
 
-    /* .filling_4 {
+    .filling_4 {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-    } */
+    }
 
-    .eventFilling {
-        display: grid;
+     .eventFilling {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 4fr;
     }
+    
+    .eventPoster {height: 47vw;}
+    
+    .poster-caption h2 {font-size: 3.3vw;}
+    
+    .poster-caption p {font-size: 2vw;}
 
-    .PicEventPoster {height: 47vw;}
 
     /* Игра */
 
@@ -181,15 +204,6 @@
         grid-template-rows: 1fr;
     }
 
-    .gameFilling {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 2fr;
-    }
-
-    .element {
-        height: 29.05vw;
-    }
 
     /*Магазин*/
 
@@ -199,23 +213,30 @@
         grid-template-rows: 12fr;
     }
 
-    .flower {height: 50vw;}
+    .flower {height: 49.6vw;}
 
     .flowerName {min-height: 70px;}
 
     .flowerButton {min-height: 70px;}
+
+
+    /*Ошибка*/
+
+    .recError h1 {font-size: 4vw;}
 
 }
 
 
 @media screen and (max-width: 414px) {
 
+
     /* База */
 
-    h1 {font-size: 9vw;}
-    h2 {font-size: 13px;}
-    .h2b {font-size: 13px; font-weight: bold;}
+    h1 {font-size: 11vw;}
+    h2 {font-size: 4vw;}
+    .h2b {font-size: 4vw; font-weight: bold;}
     p {font-size: 4.2vw; line-height: 135%;}
+
 
     /* Меню */
     
@@ -225,24 +246,49 @@
         grid-template-rows: 3fr;
     }
 
-    .menu {min-height: 70px;}
+    .menu {min-height: 17vw;}
+
 
     /* Заголовок */
 
-    .title {min-height: 150px;}
+    .title {min-height: 40vw; width: 97.5vw;}
+
 
     /* Кнопка */
 
-    .button {min-height: 70px;}
+    .button {min-height: 17vw;}
     .button a {font-size: 4vw; margin: 0;}
+
 
     /* Текст */
 
-    .text, .text_2 {min-height: 270px;}
+    .text {min-height: 75vw;}
+
+    .text2 {min-height: none;}
+
+    .text_2 {
+        height: 75vw;
+        background-color: #FBD941;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 1vw;
+    }
+
+    .text p {
+        margin-left: 5vw;
+    }
+
+    .text_2 p {
+        margin-left: 5vw;
+    }
+
 
     /* Мокапы */
 
-    .mockup {height: 76.5vw;}
+    .mockup {height: 76vw;}
+
 
     /* Футер */
 
@@ -252,10 +298,100 @@
         grid-template-rows: 3fr;
     }
 
-    .footerIn {
-        min-height: 70px;
-        line-height: 100%;
+    .footerIn {min-height: 17vw; line-height: 100%;}
+
+
+    /* Главная */
+
+    .filling {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 7fr;
     }
+
+    .blinkingFlower1 {height: 50.85vw;}
+
+    .blinkingFlower2 {height: 50.85vw;}
+
+    .textMain {
+        height: 90vw;
+        width: 97.5vw;
+        background-color: #FBD941;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 1vw;
+        border-bottom: 0.3vw solid #DB284D;
+        margin-top: -0.7vw;
+    }
+
+    .textMain p {
+        margin-left: 5vw;
+    }    
+
+    .mockup1 {height: 97vw;}
+
+    .picPosterMain {
+        height: 125vw;
+        margin-top: -0.4vw;
+    }
+
+    .spaceM {order: 1;}
+    .elementM {order: 2;}
+    .registration {order: 3;}
+
+    .more {
+        height: 41vw;
+        margin-top: 0.3vw;
+    }
+
+    .spaceM {height: 50vw;}
+
+    .bookM {height: 70vw;}
+
+    .bookMG {
+        height: 75vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        border-bottom: 0.3vw solid #DB284D;
+    }
+
+    .registration {
+        height: 120vw;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 85vw;
+    }
+
+    .regTitle {
+        font-size: 5vw;
+        font-weight: bold;
+        line-height: 20vw;
+        margin-top: -5vw;
+    }
+
+    form {line-height: 3vw;}
+
+    .registration form input[type="text"] { 
+        margin-top: 100vw;
+    }
+
+    .registration form input[type="plate"] {
+        height: 12vw;
+        width: 80vw;
+    }
+
+    .registration form input#submit {
+        height: 12vw;
+        width: 81vw;
+        font-size: 5vw;
+    }
+
 
     /* Книга */
 
@@ -265,9 +401,10 @@
         grid-template-rows: 3fr;
     }
 
-    .bookSlider {min-height: 300px;}
+    .bookSlider {min-height: 75vw;}
 
     .mockupBook {width: 99vw;}
+
 
     /* Пространство */
 
@@ -279,39 +416,81 @@
 
     .PicspaceMockup {height: 76vw;}
 
+    .caption {font-size: 4vw;}
+
+
     /*Мероприятия*/
 
     .filling_4 {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
     }
 
     .eventFilling {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 6fr;
     }
+    
+    .eventPoster {height: 71vw;}
+    
+    .poster-caption h2 {font-size: 5.5vw;}
+    
+    .poster-caption p {font-size: 3vw;}
 
     .PicEventPoster {height: 70.9vw;}
+    
 
     /* Игра */
 
     .filling_5 {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
+    }
+
+    .gameFilling-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: #DB284D;
     }
 
     .gameFilling {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 2fr;
+        grid-template-rows: 3fr;
+        will-change: none;
     }
 
-    .element {height: 28.9vw;}
+    .gameElement {flex: 0 0 auto; width: 33.1vw;}
+
+    .element {
+        height: 33.1vw;
+        width: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .element2 {display: none;}
+
+    .gameFilling {
+        animation: none;
+        animation-timing-function: none;
+    }
+
+    .gameFilling:hover {
+        animation-play-state: none;
+    }
+
 
     /*Магазин*/
+
+    .filling_6 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
+    }
 
     .shopFilling {
         display: grid;
@@ -321,8 +500,17 @@
 
     .flower {height: 99.5vw;}
 
-    .flowerName {min-height: 70px;}
+    .flowerName {min-height: 17vw;}
 
-    .flowerButton {min-height: 70px;}
+    .flowerButton {min-height: 17vw;}
+
+
+    /*Ошибка*/
+
+    .recError h1 {font-size: 6.3vw;}
+    .textError1 h2 {font-size: 2.7vw;}
+    .textError2 h2 {font-size: 2.7vw;}
+    .rec404 {font-size: 23vw;}
+    .buttonError {margin-top: 3vw;}
 
 }

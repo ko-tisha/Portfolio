@@ -1,10 +1,8 @@
 /* Меню */
 
 #menu1 {
-    /* min-width: 100px; */
     height: 8vw;
     color: #ffffff;
-    /* background-color: #DB284D; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +10,6 @@
 }
 
 #menu2, #menu3, #menu4, #menu5, #menu6 {
-    /* min-width: 100px; */
     height: 8vw;
     color: #2A4378;
     background-color: #ffffff;
@@ -26,15 +23,16 @@
 /* Текст */
 
 .textMain {
-    height: 29.9vw;
+    height: 29.85vw;
     background-color: #FBD941;
     color: #000000;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* justify-content: left; */
+    justify-content: left;
     padding: 1vw;
 }
+
+.textMain p {margin-left: 1vw;}
 
 
 /* Основное */
@@ -49,35 +47,55 @@
     background-color: #DB284D;
 }
 
-.mockup1 {
-    height: 31.8vw;
-}
+.mockup1 {height: 31.8vw;}
 
 
 /* Цветы */
 
 .blinkingFlowers {
-    /* height: 28vw; */
     background-color: #DB284D;
+    border-top: 0.35vw solid #DB284D;
+    display: flex;
+    gap: 0.3vw;
+    flex-wrap: nowrap;
+    margin-top: -0.1vw;
+    position: relative;
 }
 
-.blinkingFlower1 {
-    height: 16.55vw;
-    margin-top: 0.3vw;
+.blinkingFlower1, .blinkingFlower2 {
+    height: 16.6vw;
+    animation: fadeOut 2s infinite ease-in-out;
 }
+
+.blinkingFlower1 {animation-delay: 0s;}
 
 .blinkingFlower2 {
-    height: 16.55vw;
-    margin-top: 0.3vw;
     margin-left: 0.1vw;
+    animation-delay: 1s;
 }
+
+@keyframes fadeOut {
+    0%, 50% {
+        opacity: 1;
+    }
+    60%, 100% {
+        opacity: 0;
+    }
+}
+
+
+/* Постер */
 
 .picPosterMain {
     height: 41vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -0.2vw;
 }
+
+
+/* Регистрация */
 
 .registration {
     height: 41vw;
@@ -85,23 +103,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* line-height: 200%; */
+    margin-top: -0.2vw;
 }
 
 .regTitle {
     font-size: 1.6vw;
     font-weight: bold;
-    line-height: 400%;
-    margin-top: -3vw;
+    line-height: 6vw;
+    margin-top: -2vw;
 }
 
-form {
-    line-height: 130%;
-}
+form {line-height: 1.2vw;}
 
-.registration form input[type="text"] { 
-    margin-top: 100vw;
-}
+.registration input {font-size: 1.6vw;}
 
 .registration form input[type="plate"] {
     height: 4vw;
@@ -127,19 +141,16 @@ form {
     border: none;
 }
 
-.more {
-    height: 41vw;
-    /* border: 0.3vw solid #DB284D; */
-}
 
-.spaceM {
-    height: 16.5vw;
-}
+/* Магазин и Книга */
 
-.eventM{
-    height: 24.2vw;
-    margin-top: 0.15vw;
-}
+.more {height: 41vw; margin-top: -0.2vw;}
+
+.spaceM {height: 16.5vw;}
+
+.bookMG {margin-top: 0.15vw;}
+
+.bookM {height: 24.2vw;}
 
 
 
