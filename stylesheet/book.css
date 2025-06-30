@@ -39,7 +39,7 @@
 .bookSlider {
     border-bottom: 0.3vw solid #DB284D;
     position: relative;
-    height: 110vh;
+    height: 80vw;
     width: 100%;
     overflow: hidden;
 }

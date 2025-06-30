@@ -40,7 +40,7 @@
 
     <div class="titleButton">
       <div class="title"> <h1> А вот наш <br> ассортимент! </h1> </div>
-      <div class="button"> <a href="error.html"> ПЕРЕЙТИ </a> </div>
+      <div class="button"> <a href="cart.html"> ПЕРЕЙТИ </a> </div>
     </div>
   
     <div class="text2">
@@ -71,7 +71,7 @@
 
     <div class="flowerGroup">
         <img class="flower" src="./img/Flower1.png" alt="here_picture">
-        <div class="flowerName"> <h2> </span> МАКОТЫ </h2> </div>
+        <div class="flowerName"> <h2> МАКОТЫ </h2> </div>
         <div class="flowerButton" data-text="ДОБАВИТЬ В КОРЗИНУ" data-active-text="В КОРЗИНЕ">
             <h2>ДОБАВИТЬ В КОРЗИНУ</h2>
         </div>
@@ -263,6 +263,12 @@
 
   </div>
 
+  <script>
+    const html = flowerGroup.outerHTML;
+
+    cart.push({ name, html });
+    localStorage.setItem('cart', JSON.stringify(cart));
+  </script>
 
   <!-- Футер -->
 
@@ -286,5 +292,6 @@
   </div>
   
 </div>
+
 
 </body>

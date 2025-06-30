@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{ссылка}">
+    <meta property="og:title" content="название">
+    <meta property="og:description" content="текст">
+    <meta property="og:image" content="{картинка}">
+   <title>LabTree</title>
+   <link rel="Лаборатория креатвных деревьев" href="">
+   <link rel="icon" href="./img/pic.png">
+   <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="./script.js" defer></script>
+
+ </head>
+ <body>
+
+
+<div class="page">
+
+
+    <!-- Меню -->
+
+  <div class="menuGroupe">
+    <a href="index.html" id="menu1_6" class="menu"> <div class="h2b"> Главная </div> </a>
+    <a href="book.html" id="menu2_6" class="menu"> <div class="h2b"> Книга </div> </a>
+    <a href="space.html" id="menu3_6" class="menu"> <div class="h2b"> Пространство </div> </a>
+    <a href="event.html" id="menu4_6" class="menu"> <div class="h2b"> Мероприятия </div> </a>
+    <a href="game.html" id="menu5_6" class="menu"> <div class="h2b"> Игра </div> </a>
+    <a href="shop.html" id="menu6_6" class="menu"> <div class="h2b"> Магазин </div> </a>
+  </div>
+
+
+  <!-- Основное -->
+
+  <div class="filling_6">
+
+    <div class="titleButton">
+      <div class="title"> <h1> Корзина <br> собрана? </h1> </div>
+      <div class="button"> <a href="error.html"> ЗАКАЗАТЬ ВСЁ </a> </div>
+    </div>
+
+        <div class="text2">
+      <p> В нашем онлайн-магазине <br>
+        представлены все, имеющиеся <br>
+        у нас позиции разнообразных видов <br>
+        креативных деревьев. <br>
+        <br>
+        Некоторые даже можно посмотреть <br>
+        в живую в нашем шоуруме. Ждем вас <br>
+        в гости! Но не забывайте, что у нас <br>
+        также есть доставка. </p>
+    </div>
+  
+    <div class="mockupF">
+        <img class="mockup" src="./img/mockup_6.png" alt="here_picture">
+    </div>
+  </div>
+
+  <div class="text_2">
+      <p> В нашем онлайн-магазине представлены все, имеющиеся у нас позиции <br> разнообразных видов креативных деревьев. Некоторые даже можно посмотреть <br> в живую в нашем шоуруме. Ждем вас в гости! Но не забывайте, что у нас также <br> есть доставка. </p>
+  </div>
+
+  
+  <!-- Контейнер для товаров -->
+  <div id="cartContainer"></div>
+
+
+  <!-- Скрипт -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('cartContainer');
+    const clearButton = document.getElementById('clearCart');
+
+    function renderCart() {
+      container.innerHTML = '';
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      if (cart.length === 0) {
+        const emptyMessage = document.createElement('h2');
+        emptyMessage.textContent = 'Корзина пуста';
+        emptyMessage.classList.add('emptyCartMessage');
+        console.log('Применяю класс emptyCartMessage к надписи');
+
+        container.appendChild(emptyMessage);
+        clearButton.style.display = 'none';
+      } else {
+        clearButton.style.display = 'block';
+        cart.forEach(item => {
+          const itemElement = document.createElement('div');
+          itemElement.innerHTML = `
+            <img class="flower" src="${item.img}" width="455">
+            <div class="flowerName" style="width: 30.95vw;"><h2>${item.name}</h2></div>
+          `;
+          container.appendChild(itemElement);
+        });
+      }
+    }
+
+    clearButton.addEventListener('click', () => {
+      localStorage.removeItem('cart');
+      renderCart();
+    });
+
+    renderCart();
+  });
+</script>
+
+
+  <!-- Кнопка сброса корзины -->
+
+  <button id="clearCart"> <h2> ОЧИСТИТЬ КОРЗИНУ </h2> </button>
+
+
+  <!-- Футер -->
+
+  <div class="footer">
+    <div class="footerIn">
+      <div class="h2b"> Основатель </div>
+      <h2> Ковалева Наталия бп24дз09 </h2>
+    </div>
+    <div class="footerIn">
+      <div class="h2b">Контакты</div>
+    <h2>
+        <a href="https://www.behance.net/ko_tisha" target="_blank">Behance</a>
+        <a href="https://t.me/ko_tisha_design" target="_blank">Telegram</a>
+        <a href="https://www.youtube.com/channel/UCROj1J7Y7GaeVsJszycasug" target="_blank">YouTube</a>
+    </h2>
+    </div>
+    <div class="footerIn">
+      <div class="h2b"> Дата </div>
+      <h2> 20 апреля — 1 июня 2025 год </h2>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

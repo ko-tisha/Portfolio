@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             message.style.display = 'flex';
             message.style.justifyContent = 'center';
             message.style.alignItems = 'center';
-            message.style.height = '100%';  
+            message.style.height = '100%';
             message.style.fontSize = '1.9vw';
             message.style.color = '#DB284D';
             message.style.marginTop = '1.9vw';
@@ -49,3 +49,58 @@ document.querySelectorAll('.flowerButton').forEach(button => {
         }
     });
 });
+
+
+/*Корзина*/
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.flowerButton');
+    
+    // Восстанавливаем состояние кнопок из localStorage
+    buttons.forEach(button => {
+        const flowerGroup = button.closest('.flowerGroup');
+        const name = flowerGroup.querySelector('.flowerName h2').textContent.trim();
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        if (cart.find(item => item.name === name)) {
+            button.classList.add('active');
+            const h2 = button.querySelector('h2');
+            if (h2) h2.textContent = button.dataset.activeText;
+        }
+    });
+    
+    // Обработчик кликов
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const flowerGroup = button.closest('.flowerGroup');
+            const name = flowerGroup.querySelector('.flowerName h2').textContent.trim();
+            const img = flowerGroup.querySelector('img').src;
+            
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const itemIndex = cart.findIndex(item => item.name === name);
+            
+            if (itemIndex === -1) {
+                // Добавляем в корзину
+                button.classList.add('active');
+                const h2 = button.querySelector('h2');
+                if (h2) h2.textContent = button.dataset.activeText;
+
+                cart.push({ name, img, html: flowerGroup.outerHTML });
+
+
+            } else {
+                // Удаляем из корзины
+                cart.splice(itemIndex, 1);
+                button.classList.remove('active');
+                const h2 = button.querySelector('h2');
+                if (h2) h2.textContent = button.dataset.text;
+            }
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            
+        });
+    });
+});
+

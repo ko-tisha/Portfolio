@@ -1,0 +1,48 @@
+/* Надпись */
+
+.emptyCartMessage {
+  width: 90.5vw;
+  color: #DB284D;
+  padding: 4.5vw;
+  text-align: center;
+  border-bottom: 0.3vw solid #DB284D;
+  display: inline-block;
+  font-size: 1.9vw;
+  font-weight: bold;
+}
+
+
+/* Кнопка */
+
+#clearCart {
+    height: 10vw;
+    width: 32.95vw;
+    font-size: 1.9vw;
+    margin: 0;
+    padding: 1vw;
+    color: #ffffff;
+    background-color: #DB284D;
+    border-bottom: 0.3vw solid #DB284D;
+    border-top: 0.3vw solid #DB284D;
+    border-right: 0.3vw solid #DB284D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#clearCart:hover {
+    background-color: white;
+    border-color: #DB284D;
+}
+
+#clearCart:hover h2 {
+    color: #DB284D;
+}
+
+
+
+
+
+

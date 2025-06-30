@@ -6,8 +6,11 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     background-color: #ffffff;
-    border-top: #ffffff;
     font-family: "Onest-Regular", sans-serif;
+}
+
+.bodyError {
+    border: none;
 }
 
 
