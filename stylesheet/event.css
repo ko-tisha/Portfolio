@@ -39,7 +39,6 @@
     grid-template-rows: auto;
     gap: 0.3vw;
     background-color: #DB284D;
-    border-bottom: 0.3vw solid #DB284D;
 }
 
 .eventPoster {

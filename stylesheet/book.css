@@ -29,7 +29,6 @@
     grid-template-rows: 1fr;
     gap: 0.3vw;
     border-top: 0.3vw solid #DB284D;
-    border-bottom: 0.3vw solid #DB284D;
     background-color: #DB284D;
 }
 
@@ -37,7 +36,6 @@
 /* Листалка */
 
 .bookSlider {
-    border-bottom: 0.3vw solid #DB284D;
     position: relative;
     height: 80vw;
     width: 100%;

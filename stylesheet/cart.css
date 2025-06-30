@@ -5,11 +5,16 @@
   color: #DB284D;
   padding: 4.5vw;
   text-align: center;
-  border-bottom: 0.3vw solid #DB284D;
   display: inline-block;
   font-size: 1.9vw;
   font-weight: bold;
+  /* border-top: 0.3vw solid #DB284D; */
 }
+
+
+/* .pageCard {
+    background-color: #DB284D;
+} */
 
 
 /* Кнопка */
@@ -22,7 +27,7 @@
     padding: 1vw;
     color: #ffffff;
     background-color: #DB284D;
-    border-bottom: 0.3vw solid #DB284D;
+    border: none;
     border-top: 0.3vw solid #DB284D;
     border-right: 0.3vw solid #DB284D;
     display: flex;
@@ -37,12 +42,16 @@
     border-color: #DB284D;
 }
 
-#clearCart:hover h2 {
-    color: #DB284D;
+#clearCart:hover h2 {color: #DB284D;}
+
+
+/* Карточки */
+
+#cartContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: left;
 }
-
-
-
-
 
 

@@ -113,6 +113,7 @@ body {
     grid-template-rows: 1fr;
     gap: 0.3vw;
     background-color: #DB284D;
+    border-top: 0.3vw solid #DB284D;
 }
 
 .footerIn {

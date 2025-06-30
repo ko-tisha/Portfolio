@@ -50,7 +50,7 @@
 
 .gameElement {
     flex: 0 0 auto;
-    width: 14.2vw;
+    width: 14.3vw;
 }
 
 .element, .element2 {
@@ -76,4 +76,8 @@
 
 .gameFilling:hover {
     animation-play-state: paused;
+}
+
+.footerGame {
+    margin-top: -0.2vw;
 }

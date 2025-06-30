@@ -18,7 +18,7 @@
  <body>
 
 
-<div class="page">
+<div class="pageCard">
 
 
     <!-- Меню -->
@@ -82,7 +82,6 @@
         const emptyMessage = document.createElement('h2');
         emptyMessage.textContent = 'Корзина пуста';
         emptyMessage.classList.add('emptyCartMessage');
-        console.log('Применяю класс emptyCartMessage к надписи');
 
         container.appendChild(emptyMessage);
         clearButton.style.display = 'none';
@@ -90,9 +89,10 @@
         clearButton.style.display = 'block';
         cart.forEach(item => {
           const itemElement = document.createElement('div');
+          itemElement.classList.add('flowerGroup');
           itemElement.innerHTML = `
-            <img class="flower" src="${item.img}" width="455">
-            <div class="flowerName" style="width: 30.95vw;"><h2>${item.name}</h2></div>
+            <img class="flower" src="${item.img}">
+            <div class="flowerName"><h2>${item.name}</h2></div>
           `;
           container.appendChild(itemElement);
         });

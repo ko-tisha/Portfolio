@@ -220,6 +220,20 @@
     .flowerButton {min-height: 70px;}
 
 
+    /* Карточки */
+
+    #cartContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: left;
+    }
+
+    #clearCart {
+        height: 11.5vw;
+        width: 50vw;
+    }
+
     /*Ошибка*/
 
     .recError h1 {font-size: 4vw;}
@@ -503,6 +517,21 @@
     .flowerName {min-height: 17vw;}
 
     .flowerButton {min-height: 17vw;}
+
+
+    /* Карточки */
+
+    #cartContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: left;
+    }
+
+    #clearCart {
+        height: 20vw;
+        width: 100vw;
+    }
 
 
     /*Ошибка*/

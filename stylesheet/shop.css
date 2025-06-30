@@ -40,8 +40,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 8fr;
-    gap: 0.3vw;
-    border-bottom: 0.3vw solid #DB284D;
     background-color: #DB284D;
 }
 
@@ -51,6 +49,7 @@
     align-items: center;
     justify-content: center;
     border-bottom: 0.3vw solid #DB284D;
+    border-right: 0.38vw solid #DB284D;
 }
 
 .flowerName {
@@ -61,6 +60,8 @@
     align-items: center;
     justify-content: center;
     padding: 1vw;
+    border-right: 0.38vw solid #DB284D;
+    border-bottom: 0.3vw solid #DB284D;
 }
 
 .flowerButton {
@@ -71,8 +72,8 @@
     align-items: center;
     justify-content: center;
     padding: 1vw;
-    margin-top: 0.3vw;
-    border-top: 0.3vw solid #DB284D;
+    border-bottom: 0.3vw solid #DB284D;
+    border-right: 0.3vw solid #DB284D;
     transition: all 0.3s ease;
     cursor: pointer;
     user-select: none;
